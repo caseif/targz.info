@@ -7,6 +7,9 @@
             body {
                 font-family: 'Lato', sans-serif;
                 background: #F7F7F7;
+                display: table;
+                margin-left: auto;
+                margin-right: auto;
             }
             #container {
                 text-align: center;
@@ -29,7 +32,9 @@
                 font-size: 10pt;
                 margin-top: 12px;
                 background-color: #EEE;
-                display: inline-block;
+                display: table;
+                margin-left: auto;
+                margin-right: auto;
                 padding: 2px;
             }
             #footer {
@@ -41,75 +46,61 @@
         </style>
     </head>
     <body>
-        <div id="container">
-            <header>tar cheatsheet</header>
-            <div>
-                <div class="func-desc">
-                    Extract to current directory
-                    <div>
+        <div>
+            <div id="container">
+                <header>tar cheatsheet</header>
+                <div>
+                    <div class="func-desc">
+                        Extract to current directory
                         <span class="command">tar -xvf foo.tar.gz</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Extract to arbitrary directory
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Extract to arbitrary directory
                         <span class="command">tar -xvf foo.tar.gz -C extraction_path</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Extract inclusively
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Extract inclusively
                         <span class="command">tar -xvf foo.tar.gz file1 file2</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Extract exclusively
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Extract exclusively
                         <span class="command">tar -xvf foo.tar.gz --exclude=file_to_exclude</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Create gzipped archive
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Create gzipped archive
                         <span class="command">tar -czvf foo.tar.gz file1 file2</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Compress exclusively
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Compress exclusively
                         <span class="command">tar -czvf foo.tar.gz file1 file2 --exclude=file_to_exclude</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Create bzip2ed archive
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Create bzip2ed archive
                         <span class="command">tar -cjvf foo.tar.bz2</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="func-desc">
-                    Create xzipped archive
-                    <div>
+                <div>
+                    <div class="func-desc">
+                        Create xzipped archive
                         <span class="command">tar -cJvf foo.tar.xz</span>
                     </div>
                 </div>
+                <div id="footer">
+                    Made with ❤️ by Max Roncace | <a href="https://github.com/caseif/targz.info">GitHub</a>
+                </div>
             </div>
-        </div>
-        <div id="footer">
-            Made with ❤️ by Max Roncace | <a href="https://github.com/caseif/targz.info">GitHub</a>
         </div>
     </body>
 </html>
