@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Lato:300|Inconsolata');
+            body {
+                font-family: 'Lato', sans-serif;
+                background: #F7F7F7;
+            }
+            #container {
+                text-align: center;
+            }
+            header {
+                font-size: 42pt;
+                margin-bottom: 12px;
+            }
+            .func-desc {
+                font-size: 14pt;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                display: inline-block;
+                padding: 8px;
+                background: #FFF;
+            }
+            .command {
+                font-family: 'Inconsolata', monospace;
+                font-size: 10pt;
+                margin-top: 12px;
+                background-color: #EEE;
+                display: inline-block;
+                padding: 2px;
+            }
+            #footer {
+                font-family: 'Inconsolata', monospace;
+                font-size: 8pt;
+                text-align: center;
+                margin-top: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>tar cheatsheet</header>
+            <div>
+                <div class="func-desc">
+                    Extract to current directory
+                    <div>
+                        <span class="command">tar -xvf foo.tar.gz</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Extract to arbitrary directory
+                    <div>
+                        <span class="command">tar -xvf foo.tar.gz -C extraction_path</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Extract inclusively
+                    <div>
+                        <span class="command">tar -xvf foo.tar.gz file1 file2</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Extract exclusively
+                    <div>
+                        <span class="command">tar -xvf foo.tar.gz --exclude=file_to_exclude</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Create gzipped archive
+                    <div>
+                        <span class="command">tar -czvf foo.tar.gz file1 file2</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Compress exclusively
+                    <div>
+                        <span class="command">tar -czvf foo.tar.gz file1 file2 --exclude *.log</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Create bzip2ed archive
+                    <div>
+                        <span class="command">tar -cjvf foo.tar.bz2</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="func-desc">
+                    Create xzipped archive
+                    <div>
+                        <span class="command">tar -cJvf foo.tar.xz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Made with ❤️ by Max Roncace | <a href="https://github.com/caseif/targz.info">GitHub</a>
+        </div>
+    </body>
+</html>
+
